@@ -6,16 +6,16 @@ se è dispari stampa il numero successivo
 
 const writeDisplay = document.getElementById('display');
 
-let number = parseInt(prompt('Inserisci un numero'));
+// let number = parseInt(prompt('Inserisci un numero'));
 
-let message = `Il numero inserito è`;
+// let message = `Il numero inserito è`;
 
-if(number % 2 === 0){
-   writeDisplay.innerText = message, `${number} ed è positivo`
-} else {
-   let positiveNumber = number + 1;
-   writeDisplay.innerText = message + ` ${number} ma aggiungendo 1 diventa ${positiveNumber} ed è positivo`;
-}
+// if(number % 2 === 0){
+//    writeDisplay.innerText = message, `${number} ed è positivo`
+// } else {
+//    let positiveNumber = number + 1;
+//    writeDisplay.innerText = message + ` ${number} ma aggiungendo 1 diventa ${positiveNumber} ed è positivo`;
+// }
 
 
 
@@ -34,7 +34,6 @@ if(number % 2 === 0){
 
 //    if (number % 2 !== 0) {
 //       alert('numero non valido, inseriscilo di nuovo');
-//       isAllowed;
 //    }else {
 //       isAllowed = true;
 //       console.log(number);
@@ -42,3 +41,13 @@ if(number % 2 === 0){
 // }while (isAllowed !== true);
 
 // writeDisplay.innerHTML = `il numero ${number} è pari: DAJE!`;
+
+
+let askNumb = parseInt(prompt('inserisci un numero'));
+
+while (askNumb % 2) {
+   askNumb += 1;
+}
+
+console.log(askNumb);
+writeDisplay.innerText = `Il numero scelto positivo è: ${askNumb}`;
