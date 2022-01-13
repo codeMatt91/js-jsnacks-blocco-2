@@ -4,11 +4,15 @@ Aggiungi elementi casuali all’array che ha meno elementi,
 fino a quando ne avrà tanti quanti l’altro
 */
 
+
+const writeDisplay = document.getElementById('display');
+
 const list1 = [12, 24, 8, 90, 6, 18, 23];
 const list2 = [45, 60, 2];
 
 console.log(`List1`, list1);
 console.log(`List2`, list2);
+
 
 
 while (list1.length !== list2.length) {
@@ -29,3 +33,5 @@ while (list1.length !== list2.length) {
 
 console.log(`List1`, list1);
 console.log(`List2`, list2);
+
+writeDisplay.innerHTML = `La lista 1 è: (${list1}) <br> la lista 2 è: (${list2})`;
