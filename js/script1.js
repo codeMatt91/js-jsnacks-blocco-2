@@ -7,6 +7,7 @@ Esegui questo programma in due versioni, con il for e con il while
 
 */
 
+// * ESERCIZIO CON IL FOR 
 // const writeDisplay = document.getElementById('display');
 
 // let number;
@@ -22,6 +23,7 @@ Esegui questo programma in due versioni, con il for e con il while
 // console.log(sum);
 // writeDisplay.innerHTML = `La somma dei numeri inseriti è; <p>${sum}</p>`;
 
+
 //* ISTREUZIONI PER IL WHILE 
 
 const writeDisplay = document.getElementById('display');
@@ -35,10 +37,10 @@ let i = 0;
 while(list.length < 5) {
    number = parseInt(prompt('Inserisci un numero'));
    list.push(number);
-   console.log(list);
    sum += number;
    i++;
 }
+console.log(list);
 
 console.log(sum);
 writeDisplay.innerHTML = `La somma dei numeri inseriti è; <p>${sum}</p>`;
