@@ -43,11 +43,11 @@ const writeDisplay = document.getElementById('display');
 // writeDisplay.innerHTML = `il numero ${number} è pari: DAJE!`;
 
 
-let askNumb = parseInt(prompt('inserisci un numero'));
+let askNumber = parseInt(prompt('inserisci un numero'));
 
-while (askNumb % 2) {
-   askNumb += 1;
+while (askNumber % 2) {
+   askNumber += 1;
 }
 
-console.log(askNumb);
-writeDisplay.innerText = `Il numero scelto positivo è: ${askNumb}`;
+console.log(askNumber);
+writeDisplay.innerText = `Il numero scelto positivo è: ${askNumber}`;
