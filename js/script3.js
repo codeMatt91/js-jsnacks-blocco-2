@@ -7,8 +7,28 @@ lista di cognomi, Gatsby vuole generare una falsa lista di 3 invitati.
 3- genero una falsa lista di coppie nome-cognome
 */
 
+const writeDisplay = document.getElementById('display');
 
-const nomi = ['matteo', 'giovanni', 'marco', 'luca', 'anna'];
+const nomi = ['matteo', 'giovanni', 'marco', 'luca', 'anna', 'antonio'];
 const cognomi = ['bigotti', 'rossi', 'verdi', 'neri'];
 
+let fakeList = [];
 
+let i = 0;
+while (fakeList.length < 3) {
+
+   const randomName = Math.floor(Math.random() * nomi.length);
+   const randomSurname = Math.floor(Math.random() * cognomi.length);
+
+   const name = nomi[randomName];
+   const surname = cognomi[randomSurname];
+
+   let fakeGuess = `${name} ${surname}`;
+   
+
+   fakeList.push(fakeGuess);
+
+};
+
+console.log(fakeList);
+writeDisplay.innerText = fakeList;
